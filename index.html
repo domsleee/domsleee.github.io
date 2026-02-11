@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>domsleee - Projects</title>
+  <meta name="description" content="Dom's portfolio — open source CLI tools, web apps, and experiments including posh-fzf, Bananagrams, and more.">
+  <meta property="og:title" content="domsleee - Projects">
+  <meta property="og:description" content="Dom's portfolio — open source CLI tools, web apps, and experiments.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/14891742?v=4">
+  <meta property="og:url" content="https://domsleee.github.io/">
+  <link rel="icon" href="/favicon.ico">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -28,7 +34,7 @@
       min-height: 100vh;
     }
 
-    .container {
+    .container, main.container {
       max-width: 960px;
       margin: 0 auto;
       padding: 0 24px;
@@ -81,7 +87,7 @@
       margin-bottom: 48px;
     }
 
-    section h3 {
+    section h2 {
       font-size: 1rem;
       font-weight: 600;
       color: var(--text-muted);
@@ -114,7 +120,7 @@
       transform: translateY(-2px);
     }
 
-    .card h2 {
+    .card h3 {
       font-size: 1.15rem;
       font-weight: 600;
       margin-bottom: 8px;
@@ -123,13 +129,13 @@
       gap: 8px;
     }
 
-    .card h2 .arrow {
+    .card h3 .arrow {
       font-size: 0.85rem;
       color: var(--text-muted);
       transition: transform 0.2s, color 0.2s;
     }
 
-    .card:hover h2 .arrow {
+    .card:hover h3 .arrow {
       transform: translate(2px, -2px);
       color: var(--accent);
     }
@@ -166,9 +172,9 @@
   </style>
 </head>
 <body>
-  <div class="container">
+  <main class="container">
     <header>
-      <img class="avatar" src="https://avatars.githubusercontent.com/u/14891742?v=4" alt="domsleee">
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/14891742?v=4" alt="domsleee" fetchpriority="high">
       <h1>domsleee</h1>
       <p>A collection of projects and experiments.</p>
       <div class="links">
@@ -178,28 +184,28 @@
     </header>
 
     <section>
-      <h3>CLI Tools</h3>
+      <h2>CLI Tools</h2>
       <div class="projects">
         <a class="card" href="https://github.com/domsleee/posh-fzf" target="_blank" rel="noopener">
-          <h2>posh-fzf <span class="arrow">&nearr;</span></h2>
+          <h3>posh-fzf <span class="arrow">&nearr;</span></h3>
           <p>Fzf keybinding integration for PowerShell.</p>
           <div class="tags"><span class="tag">Rust</span></div>
         </a>
 
         <a class="card" href="https://github.com/domsleee/posh-tabcomplete" target="_blank" rel="noopener">
-          <h2>posh-tabcomplete <span class="arrow">&nearr;</span></h2>
+          <h3>posh-tabcomplete <span class="arrow">&nearr;</span></h3>
           <p>Blazing fast tab completion for PowerShell.</p>
           <div class="tags"><span class="tag">Nushell</span></div>
         </a>
 
         <a class="card" href="https://github.com/domsleee/dust-archive" target="_blank" rel="noopener">
-          <h2>dust-archive <span class="arrow">&nearr;</span></h2>
+          <h3>dust-archive <span class="arrow">&nearr;</span></h3>
           <p>Print compressed sizes of archives in a tree-like format.</p>
           <div class="tags"><span class="tag">Rust</span></div>
         </a>
 
         <a class="card" href="https://domsleee.github.io/ForceOps/" target="_blank" rel="noopener">
-          <h2>ForceOps <span class="arrow">&nearr;</span></h2>
+          <h3>ForceOps <span class="arrow">&nearr;</span></h3>
           <p>.NET library that force-deletes files and directories by killing processes that lock them.</p>
           <div class="tags"><span class="tag">C#</span></div>
         </a>
@@ -207,34 +213,34 @@
     </section>
 
     <section>
-      <h3>Web Apps</h3>
+      <h2>Web Apps</h2>
       <div class="projects">
         <a class="card" href="https://bgrams.app/" target="_blank" rel="noopener">
-          <h2>Bananagrams <span class="arrow">&nearr;</span></h2>
+          <h3>Bananagrams <span class="arrow">&nearr;</span></h3>
           <p>Online multiplayer Bananagrams word game.</p>
           <div class="tags"><span class="tag">TypeScript</span></div>
         </a>
 
         <a class="card" href="https://domsleee.github.io/npuzzle/" target="_blank" rel="noopener">
-          <h2>N-Puzzle <span class="arrow">&nearr;</span></h2>
+          <h3>N-Puzzle <span class="arrow">&nearr;</span></h3>
           <p>Interactive sliding tile puzzle with timer, move counter, and shortest-path solver.</p>
           <div class="tags"><span class="tag">TypeScript</span></div>
         </a>
 
         <a class="card" href="https://domsleee.github.io/Image-merge-pdf/" target="_blank" rel="noopener">
-          <h2>Image Merge PDF <span class="arrow">&nearr;</span></h2>
+          <h3>Image Merge PDF <span class="arrow">&nearr;</span></h3>
           <p>Merge multiple images into a single PDF with live preview, entirely client-side.</p>
           <div class="tags"><span class="tag">JavaScript</span></div>
         </a>
 
         <a class="card" href="https://domsleee.github.io/pdf-to-image/" target="_blank" rel="noopener">
-          <h2>PDF to Image <span class="arrow">&nearr;</span></h2>
+          <h3>PDF to Image <span class="arrow">&nearr;</span></h3>
           <p>Convert PDF pages to images and download as a zip, entirely client-side.</p>
           <div class="tags"><span class="tag">JavaScript</span></div>
         </a>
 
         <a class="card" href="https://domsleee.github.io/covid-heatmap/" target="_blank" rel="noopener">
-          <h2>COVID Heatmap <span class="arrow">&nearr;</span></h2>
+          <h3>COVID Heatmap <span class="arrow">&nearr;</span></h3>
           <p>Interactive Mapbox choropleth map of COVID-19 cases by suburb in Sydney.</p>
           <div class="tags"><span class="tag">JavaScript</span></div>
         </a>
@@ -242,16 +248,16 @@
     </section>
 
     <section>
-      <h3>Supreme Snowboarding</h3>
+      <h2>Supreme Snowboarding</h2>
       <div class="projects">
         <a class="card" href="https://domsleee.github.io/SS-Dat-Info/" target="_blank" rel="noopener">
-          <h2>SS Replay Viewer <span class="arrow">&nearr;</span></h2>
+          <h3>SS Replay Viewer <span class="arrow">&nearr;</span></h3>
           <p>3D replay analyzer with frame-by-frame data, YouTube sync, and CSV export.</p>
           <div class="tags"><span class="tag">TypeScript</span></div>
         </a>
 
         <a class="card" href="https://github.com/domsleee/SS-Dat-Info/wiki/Display_Config" target="_blank" rel="noopener">
-          <h2>Display_Config <span class="arrow">&nearr;</span></h2>
+          <h3>Display_Config <span class="arrow">&nearr;</span></h3>
           <p>Adds new features to Supreme Snowboarding via game hooks &mdash; replay viewing, 4K support, custom controls, and toggle ghost transparency.</p>
           <div class="tags"><span class="tag">TypeScript</span></div>
         </a>
@@ -259,22 +265,22 @@
     </section>
 
     <section>
-      <h3>Write-ups</h3>
+      <h2>Write-ups</h2>
       <div class="projects">
         <a class="card" href="https://domslee.com/2020/04/12/high-score-tetrisai-improved.html" target="_blank" rel="noopener">
-          <h2>Tetris AI <span class="arrow">&nearr;</span></h2>
+          <h3>Tetris AI <span class="arrow">&nearr;</span></h3>
           <p>Building a high-scoring Tetris AI using particle swarm optimization.</p>
           <div class="tags"><span class="tag">C++</span><span class="tag">blog post</span></div>
         </a>
 
         <a class="card" href="https://domslee.com/2022/10/14/solving-wordle" target="_blank" rel="noopener">
-          <h2>Solving Wordle <span class="arrow">&nearr;</span></h2>
+          <h3>Solving Wordle <span class="arrow">&nearr;</span></h3>
           <p>Optimal strategies for solving Wordle programmatically.</p>
           <div class="tags"><span class="tag">C++</span><span class="tag">blog post</span></div>
         </a>
       </div>
     </section>
-  </div>
+  </main>
 
   <footer>
     <div class="container">&copy; domsleee</div>
